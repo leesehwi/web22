@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register page</title>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<style>
+    body {
+        background-image: url("background.gif");
+    }
+</style>
+<body style = "margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px">
+    <form action = "register.php" method = "POST" >
+        <div class = "login-box" style="padding-top : 0px;">
+            <h1 style="margin-bottom: 0px;">Register</h1>
+            <div class = "textbox">
+                <i class="fas fa-id-card-alt"></i>
+                <input type = "text" name = "userid" value = "" required = "" style="width: 60%;">
+                <input class = "button" type = "button" style = "width : 22%; border : 2px solid; font-size: 14px;" name = "" value = "Dup Check">
+                <label>User Id</label>
+            </div>
+
+            <div class = "textbox">
+                <i class="fas fa-key"></i>
+                <input type = "password" name = "password" value = "" required = "">
+                <label>Password</label>
+            </div>
+
+            <div class = "textbox">
+                <i class="fas fa-user"></i>
+                <input type = "text" name = "username" value = "" required = "">
+                <label>User Name</label>
+            </div>
+
+            <div class = "radiobox">
+                <i class="fas fa-venus-mars"></i>
+                <input type = "radio" name = "gender" value = "m" required = "">Male
+                <input type = "radio" name = "gender" value = "f" required = "">Female
+            </div>
+
+            <div class = "textbox">
+                <i class="fas fa-envelope"></i>
+                <input type = "email" name = "email" value = "" required = "">
+                <label>E-mail</label>
+            </div>
+
+            <div class = "selectbox">
+                <i class="fas fa-briefcase"></i>
+                <span style = "font-size : 20px; margin-left: 8px;">department : </span>
+                <select name = "dept"  style ="text-align-last:center; width:177px;" required = "">
+                    <option selected hidden>Department</option>
+                    <option value = "인사">인사</option>
+                    <option value = "경영">경영</option>
+                    <option value = "영업">영업</option>
+                    <option value = "연구">연구</option>
+                </select>
+            </div>
+
+            <input class = "submit" type = "submit" name = "submit" value = "Submit">
+            <a href = "index.html"><input class = "button" type = "button" name = "" value = "Go to Login Page"></a>
+        </div>
+    </form>
+</body>
+</html>

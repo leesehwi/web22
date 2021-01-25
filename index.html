@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sehwi World</title>
+    <meta charset = "utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<style>
+    body {
+        background-image: url("background.gif");
+    }
+</style>
+<body style = "margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px">
+    <form action = "login.php" method = "POST" >
+        <div class = "login-box">
+            <h1>Login</h1>
+            <div class = "textbox">
+                <i class="fas fa-id-card-alt"></i>
+                <input type = "text" name = "userid" value = "" required = "">
+                <label>User Id</label>
+            </div>
+
+            <div class = "textbox">
+                <i class="fas fa-key"></i>
+                <input type = "password" name = "password" value = "" required = "">
+                <label>Password</label>
+            </div>
+
+            <input class = "submit" type = "submit" name = "" value = "Login">
+            <a href = "register.html"><input class = "button" type = "button" name = "register" value = "Register"></a>
+        </div>
+    </form>
+</body>
+</html>
